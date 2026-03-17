@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Service Client | TerangaImmo</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#11131c',
+                        accent: '#C5A880',
+                        success: '#22c55e',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        heading: ['Playfair Display', 'Georgia', 'serif'],
+                        outfit: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
+    
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased font-sans text-gray-800 bg-[#F9FAFB] overflow-x-hidden selection:bg-accent selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 py-4 glass-nav top-0 shadow-sm">
+        <div class="container mx-auto px-6 lg:px-12 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-1 cursor-pointer group">
+                <span class="font-outfit font-black text-2xl tracking-[1px] flex items-baseline text-primary">
+                    Teranga<span class="text-accent">Immo</span><span class="w-2 h-2 rounded-full bg-accent ml-1 mb-1 shadow-[0_0_10px_rgba(12,183,242,0.8)]"></span>
+                </span>
+            </a>
+            <div class="hidden md:flex items-center space-x-10 text-sm font-medium tracking-wide">
+                <a href="index.html#hero" class="text-gray-900 hover:text-accent transition-all">Acheter</a>
+                <a href="index.html" class="text-gray-900 hover:text-accent transition-all">Louer</a>
+                <a href="contact.html" class="text-accent font-bold transition-all">Contact</a>
+                <a href="../../bokk-vitrine-html/index.html" class="text-gray-500 hover:text-primary transition-colors text-xs uppercase tracking-widest border-l border-gray-300 pl-8">L'écosystème BOKK</a>
+            </div>
+            <div class="hidden md:flex items-center gap-4">
+                <button class="bg-primary text-white px-7 py-3 rounded-full font-bold text-sm tracking-wide hover:bg-black transition-all shadow-lg hover:-translate-y-0.5">
+                    Déposer une annonce
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="pt-32 pb-16 bg-white border-b border-gray-100 text-center relative overflow-hidden">
+        <div class="absolute w-96 h-96 bg-accent/5 rounded-full blur-[100px] top-0 left-1/2 -translate-x-1/2 pointer-events-none"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <h1 class="text-4xl md:text-5xl font-heading font-black text-primary mb-4">Contact & Support</h1>
+            <p class="text-gray-500 font-light max-w-xl mx-auto">Une question sur une annonce, un profil ou une procédure légale ? Notre équipe est là pour vous.</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-16">
+        <div class="container mx-auto px-6 max-w-5xl flex flex-col lg:flex-row gap-12">
+            
+            <!-- Info Cards -->
+            <div class="lg:w-1/3 flex flex-col gap-6">
+                <!-- Phone -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+                    <div class="w-12 h-12 bg-primary/5 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="phone" class="text-primary w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-1">Service Client</h3>
+                    <p class="text-gray-500 text-sm mb-3">Lundi - Vendredi, 9h à 18h</p>
+                    <a href="tel:+221770000000" class="text-primary font-bold hover:text-accent">+221 77 000 00 00</a>
+                </div>
+                
+                <!-- Email -->
+                <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+                    <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center mb-4">
+                        <i data-lucide="mail" class="text-accent w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-1">Email Support</h3>
+                    <p class="text-gray-500 text-sm mb-3">Réponse sous 24h ouvrées</p>
+                    <a href="mailto:support@terangaimmo.com" class="text-accent font-bold hover:text-primary">support@terangaimmo.com</a>
+                </div>
+
+                <!-- Notary network -->
+                <div class="bg-primary rounded-2xl p-6 shadow-xl relative overflow-hidden">
+                    <i data-lucide="scale" class="absolute -right-4 -bottom-4 w-32 h-32 text-white/5"></i>
+                    <h3 class="font-bold text-white mb-2 relative z-10">Réseau Notarial <span class="bg-accent text-primary text-[10px] uppercase font-bold px-2 py-0.5 rounded-full ml-2">PRO</span></h3>
+                    <p class="text-gray-400 text-sm mb-4 relative z-10 leading-relaxed text-light">Vous êtes notaire ou agent certifié et souhaitez rejoindre TerangaImmo ?</p>
+                    <a href="mailto:partenaires@terangaimmo.com" class="text-accent font-bold text-sm relative z-10 flex items-center gap-1 hover:text-white">Devenir partenaire <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="lg:w-2/3">
+                <div class="bg-white rounded-[2rem] p-8 md:p-10 border border-gray-100 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)]">
+                    <h2 class="text-2xl font-heading font-black text-primary mb-8">Envoyez-nous un message</h2>
+                    
+                    <form action="#" method="POST" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-sm font-bold text-gray-700 ml-1">Prénom & Nom</label>
+                                <input type="text" class="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-100 focus:outline-none focus:border-accent focus:bg-white transition-all font-light" placeholder="Ahmadou Ndiaye">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-sm font-bold text-gray-700 ml-1">Email</label>
+                                <input type="email" class="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-100 focus:outline-none focus:border-accent focus:bg-white transition-all font-light" placeholder="ahmadou@example.com">
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-sm font-bold text-gray-700 ml-1">Sujet de votre demande</label>
+                            <select class="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-100 focus:outline-none focus:border-accent focus:bg-white transition-all font-light appearance-none text-gray-600">
+                                <option>Informations sur une annonce</option>
+                                <option>Signaler une fraude ou annonce douteuse</option>
+                                <option>Problème de compte ou de publication</option>
+                                <option>Devenir partenaire certifié</option>
+                                <option>Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-sm font-bold text-gray-700 ml-1">Votre message</label>
+                            <textarea rows="5" class="w-full px-5 py-4 rounded-xl bg-gray-50 border border-gray-100 focus:outline-none focus:border-accent focus:bg-white transition-all font-light" placeholder="Expliquez en détail votre besoin..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 bg-primary text-white rounded-xl font-bold text-base hover:bg-black transition-all flex items-center justify-center gap-2">
+                            <i data-lucide="send" class="w-5 h-5"></i> Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#111111] pt-20 pb-12 relative overflow-hidden flex flex-col mt-10">
+        <div class="container mx-auto px-6 lg:px-12 relative z-10 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 font-medium tracking-wide">
+            © 2026 BOKK Technologies. Tous droits réservés.
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

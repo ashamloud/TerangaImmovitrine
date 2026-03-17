@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité | TerangaImmo</title>
+    <meta name="description" content="Politique de confidentialité concernant la protection des données personnelles sur TerangaImmo by BOKK.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#11131c',
+                        accent: '#C5A880',
+                        success: '#22c55e',
+                        surface: '#F7F7F7',
+                        aurora: { cyan: '#E0F2F1', peach: '#FFF3E0' }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        heading: ['Playfair Display', 'Georgia', 'serif'],
+                        outfit: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
+    
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .aurora-bg {
+            background: radial-gradient(circle at 15% 50%, rgba(224, 242, 241, 0.6), transparent 50%),
+                        radial-gradient(circle at 85% 30%, rgba(255, 243, 224, 0.6), transparent 50%);
+            background-color: #F8FAFC;
+        }
+    </style>
+</head>
+<body class="antialiased font-sans text-gray-800 bg-[#F9FAFB] selection:bg-accent selection:text-white flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 py-4 glass-nav top-0 shadow-sm">
+        <div class="container mx-auto px-6 lg:px-12 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-1 cursor-pointer group">
+                <span class="font-outfit font-black text-2xl tracking-[1px] flex items-baseline text-primary">
+                    Teranga<span class="text-accent">Immo</span><span class="w-2 h-2 rounded-full bg-accent ml-1 mb-1 shadow-[0_0_10px_rgba(197,168,128,0.8)]"></span>
+                </span>
+            </a>
+            <div class="hidden md:flex items-center space-x-10 text-sm font-medium tracking-wide">
+                <a href="index.html#hero" class="text-gray-900 hover:text-accent transition-all">Acheter</a>
+                <a href="index.html#hero" class="text-gray-900 hover:text-accent transition-all">Louer</a>
+                <a href="index.html#confiance" class="text-gray-900 hover:text-accent transition-all">Confiance BOKK</a>
+                <a href="../../bokk-vitrine-html/index.html" class="text-gray-500 hover:text-primary transition-colors text-xs uppercase tracking-widest border-l border-gray-300 pl-8">L'écosystème</a>
+            </div>
+            <div class="hidden md:flex items-center gap-4">
+                <button class="text-gray-900 hover:text-accent font-semibold text-sm transition-colors">Se connecter</button>
+                <button class="bg-primary text-white px-7 py-3 rounded-full font-bold text-sm tracking-wide hover:bg-black transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+                    Déposer une annonce
+                </button>
+            </div>
+            <button class="md:hidden p-2 text-primary"><i data-lucide="menu" class="w-6 h-6"></i></button>
+        </div>
+    </nav>
+
+    <!-- Page Header (Aurora Style) -->
+    <header class="aurora-bg pt-40 pb-32 relative text-center border-b border-gray-100">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="inline-flex items-center gap-2 bg-white/60 backdrop-blur-sm border border-white rounded-full w-max px-4 py-2 mb-6 shadow-sm">
+                <i data-lucide="shield" class="w-4 h-4 text-accent"></i>
+                <span class="text-primary text-xs font-bold uppercase tracking-wider">Données Personnelles</span>
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-black text-primary mb-4 tracking-tight">
+                Politique de<br/>Confidentialité
+            </h1>
+            <p class="text-gray-500 font-light max-w-lg mx-auto">
+                Dernière mise à jour : 16 Mars 2026. <br/>Comment TerangaImmo protège vos informations au Sénégal.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content overlaps the header slightly -->
+    <main class="container mx-auto px-6 lg:px-12 flex-grow -mt-16 relative z-20 mb-24">
+        <div class="bg-white rounded-[2rem] p-8 md:p-16 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] border border-gray-100 max-w-4xl mx-auto">
+            
+            <article class="prose prose-lg prose-gray max-w-none font-light leading-relaxed">
+                
+                <h2 class="text-3xl font-heading font-black text-primary mb-6 pt-0 mt-0">La confiance avant tout</h2>
+                <p class="mb-8">
+                    Dans le secteur immobilier, la confiance est primordiale. TerangaImmo (BOKK Technologies) s'engage à protéger vos données personnelles avec les standards de sécurité les plus élevés. Puisque nous luttons contre les arnaques, nous collectons des données d'identité réelles, ce qui nous oblige à une responsabilité absolue quant à leur protection.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-8 my-10">
+                    <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+                        <i data-lucide="eye-off" class="text-accent w-6 h-6 mb-4"></i>
+                        <h4 class="font-bold text-gray-900 mb-2">Pas de revente de données</h4>
+                        <p class="text-gray-500 text-sm">Vos données (téléphones, emails, CNI) ne sont jamais vendues à des sociétés de marketing ou des tiers non autorisés.</p>
+                    </div>
+                    <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+                        <i data-lucide="lock-keyhole" class="text-accent w-6 h-6 mb-4"></i>
+                        <h4 class="font-bold text-gray-900 mb-2">Documents Chiffrés</h4>
+                        <p class="text-gray-500 text-sm">Vos pièces d'identité et titres fonciers téléversés pour vérification sont chiffrés sur nos serveurs sécurisés.</p>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-heading font-black text-primary mb-6">1. Quelles données collectons-nous ?</h2>
+                <p class="mb-4">Pour garantir l'intégrité de notre plateforme, nous collectons :</p>
+                <ul class="list-disc pl-6 mb-8 text-gray-600 space-y-2">
+                    <li><strong>Données d'identité :</strong> Nom, prénom, copie de pièce d'identité (pour obtenir le badge "Vérifié").</li>
+                    <li><strong>Données de contact :</strong> Numéro de téléphone (au Sénégal), adresse email valide.</li>
+                    <li><strong>Données immobilières :</strong> Preuves de propriété, titres fonciers (visibles uniquement par la modération TerangaImmo et/ou les notaires partenaires).</li>
+                    <li><strong>Communications :</strong> Les messages échangés via notre Chat Intégré pour lutter contre les fraudes et escroqueries.</li>
+                </ul>
+
+                <h2 class="text-3xl font-heading font-black text-primary mb-6">2. Pourquoi utilisons-nous vos données ?</h2>
+                <p class="mb-8">
+                    Le but principal est la lutte anti-arnaque immobilière. Un propriétaire anonyme ne peut pas publier sur TerangaImmo. Vos informations nous permettent d'attester de votre légitimité, de faciliter la mise en relation sécurisée avec de potentiels locataires ou acheteurs, et ponctuellement de vous accompagner via notre réseau de notaires ou agents agréés.
+                </p>
+
+                <h2 class="text-3xl font-heading font-black text-primary mb-6">3. Transmission aux Notaires & Partenaires</h2>
+                <p class="mb-8">
+                    Avec votre accord explicite, lors de la finalisation d'un achat ou d'une location, TerangaImmo transfère les documents légaux nécessaires (pièces d'identité, titres fonciers) au Notaire partenaire ou à l'Agent Immobilier certifié en charge de conclure votre dossier. Aucune donnée n'est transmise d'office sans que vous n'ayez engagé une transaction.
+                </p>
+
+                <h2 class="text-3xl font-heading font-black text-primary mb-6">4. Suppression du compte</h2>
+                <p class="mb-8">
+                    Conformément aux directives sur la protection des données (CDP au Sénégal), vous avez le droit d'accéder, de rectifier et de supprimer vos informations personnelles. Vous pouvez clôturer votre compte BOKK à tout moment. Notez cependant que les traces de transactions immobilières abouties (factures, mandats de vente) peuvent être conservées à des fins légales, administratives ou comptables.
+                </p>
+
+                <div class="mt-16 pt-8 border-t border-gray-100 flex items-center gap-4">
+                    <button class="bg-primary text-white px-8 py-3 rounded-full font-bold text-sm tracking-wide hover:bg-black transition-all">Accepter la Politique</button>
+                    <a href="conditions.html" class="text-gray-500 font-medium hover:text-accent transition-colors text-sm">Voir les Conditions Générales</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Super Dark Footer mimicking Luxury Branding -->
+    <footer class="bg-[#111111] pt-32 pb-12 relative overflow-hidden flex flex-col mt-auto">
+        <div class="absolute top-10 left-1/2 transform -translate-x-1/2 w-full text-center pointer-events-none opacity-[0.02]">
+            <h1 class="text-[12rem] md:text-[20rem] font-heading font-black text-white leading-none tracking-tighter mix-blend-overlay whitespace-nowrap">TERANGA</h1>
+        </div>
+        <div class="container mx-auto px-6 lg:px-12 relative z-10 flex flex-col md:flex-row justify-between mb-20 gap-12 border-b border-white/10 pb-20">
+            <div class="md:w-1/3">
+                <span class="font-outfit font-black text-3xl tracking-[1px] flex items-baseline text-white mb-6">
+                    Teranga<span class="text-accent">Immo</span>
+                </span>
+                <p class="text-gray-500 text-sm leading-relaxed max-w-xs">La plateforme immobilière premium du Sénégal, garantissant sécurité et transparence. Un service de l'écosystème communautaire BOKK.</p>
+            </div>
+            <div class="flex gap-16 md:w-2/3 md:justify-end flex-wrap">
+                <div>
+                    <h4 class="text-white font-bold mb-6 font-outfit uppercase tracking-wider text-xs">Entreprise</h4>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="../../bokk-vitrine-html/index.html" class="hover:text-accent transition-colors">Écosystème BOKK</a></li>
+                        <li><a href="index.html#confiance" class="hover:text-accent transition-colors">Garantie Anti-fraude</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 lg:px-12 relative z-10 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 font-medium tracking-wide">
+            <div class="mb-4 md:mb-0"><span>© 2026 BOKK Technologies. Tous droits réservés.</span></div>
+            <div class="flex space-x-6">
+                <a href="conditions.html" class="hover:text-white transition-colors uppercase tracking-widest">Conditions</a>
+                <a href="#" class="text-white uppercase tracking-widest pointer-events-none">Confidentialité</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

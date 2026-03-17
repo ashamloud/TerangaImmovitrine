@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions Légales | TerangaImmo</title>
+    <meta name="description" content="Mentions légales de TerangaImmo, la plateforme immobilière au Sénégal.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#11131c',
+                        accent: '#C5A880',
+                        success: '#22c55e',
+                        surface: '#F7F7F7',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        heading: ['Playfair Display', 'Georgia', 'serif'],
+                        outfit: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
+    
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased font-sans text-gray-800 bg-[#F9FAFB] overflow-x-hidden selection:bg-accent selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 py-4 glass-nav top-0 shadow-sm">
+        <div class="container mx-auto px-6 lg:px-12 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-1 cursor-pointer group">
+                <span class="font-outfit font-black text-2xl tracking-[1px] flex items-baseline text-primary">
+                    Teranga<span class="text-accent">Immo</span><span class="w-2 h-2 rounded-full bg-accent ml-1 mb-1 shadow-[0_0_10px_rgba(12,183,242,0.8)]"></span>
+                </span>
+            </a>
+            <div class="hidden md:flex items-center space-x-10 text-sm font-medium tracking-wide">
+                <a href="index.html#hero" class="text-gray-900 hover:text-accent transition-all">Acheter</a>
+                <a href="index.html" class="text-gray-900 hover:text-accent transition-all">Louer</a>
+                <a href="contact.html" class="text-gray-900 hover:text-accent transition-all">Contact</a>
+                <a href="../../bokk-vitrine-html/index.html" class="text-gray-500 hover:text-primary transition-colors text-xs uppercase tracking-widest border-l border-gray-300 pl-8">L'écosystème BOKK</a>
+            </div>
+            <div class="hidden md:flex items-center gap-4">
+                <button class="bg-primary text-white px-7 py-3 rounded-full font-bold text-sm tracking-wide hover:bg-black transition-all shadow-lg hover:-translate-y-0.5">
+                    Déposer une annonce
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="pt-32 pb-16 bg-white border-b border-gray-100 text-center">
+        <div class="container mx-auto px-6">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/5 text-primary font-bold text-xs uppercase tracking-widest mb-6">
+                <i data-lucide="scale" class="w-4 h-4 text-accent"></i> Juridique
+            </div>
+            <h1 class="text-4xl md:text-5xl font-heading font-black text-primary mb-4">Mentions Légales</h1>
+            <p class="text-gray-500 font-light max-w-xl mx-auto">Conformément aux dispositions de la loi sur la confiance dans l'économie numérique.</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-16">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm space-y-12">
+                
+                <div>
+                    <h2 class="text-2xl font-heading font-bold text-primary mb-6 flex items-center gap-2">
+                        <i data-lucide="building" class="w-5 h-5 text-accent"></i> 1. Éditeur de la Plateforme
+                    </h2>
+                    <ul class="space-y-3 text-gray-600 font-light bg-gray-50 p-6 rounded-2xl">
+                        <li><strong>Plateforme :</strong> TerangaImmo (Groupe BOKK Technologies)</li>
+                        <li><strong>Siège social :</strong> Dakar, Sénégal</li>
+                        <li><strong>Directeur de la publication :</strong> M. Gueladio</li>
+                        <li><strong>Contact :</strong> contact@terangaimmo.com</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-heading font-bold text-primary mb-6 flex items-center gap-2">
+                        <i data-lucide="server" class="w-5 h-5 text-accent"></i> 2. Hébergement
+                    </h2>
+                    <ul class="space-y-3 text-gray-600 font-light bg-gray-50 p-6 rounded-2xl">
+                        <li><strong>Hébergeur :</strong> Google LLC (Firebase)</li>
+                        <li><strong>Adresse :</strong> 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</li>
+                        <li><strong>Hébergement Média :</strong> Cloudinary (3400 Central Expressway, Santa Clara, CA 95051, USA)</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-heading font-bold text-primary mb-6 flex items-center gap-2">
+                        <i data-lucide="copyright" class="w-5 h-5 text-accent"></i> 3. Propriété Intellectuelle
+                    </h2>
+                    <p class="text-gray-600 font-light leading-relaxed">
+                        L'ensemble des éléments constituant la plateforme TerangaImmo (textes, graphismes, logiciels, photographies, images, vidéos, sons, plans, noms, logos, marques, créations et œuvres protégeables diverses, bases de données, etc.) ainsi que la plateforme elle-même, relèvent des législations sénégalaises et internationales sur le droit d'auteur et sur les droits voisins du droit d'auteur.
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-heading font-bold text-primary mb-6 flex items-center gap-2">
+                        <i data-lucide="shield-alert" class="w-5 h-5 text-accent"></i> 4. Limitation de Responsabilité
+                    </h2>
+                    <p class="text-gray-600 font-light leading-relaxed">
+                        TerangaImmo s'efforce de vérifier chaque annonce (concept "100% vérifié"). Toutefois, notre plateforme agit principalement en tant qu'intermédiaire de mise en relation technique entre des acheteurs/locataires et des propriétaires/agences certifiés. La conclusion d'un contrat de vente ou de bail se fait exclusivement entre ces deux parties, idéalement accompagnées de nos notaires partenaires.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#111111] pt-20 pb-12 relative overflow-hidden flex flex-col mt-20">
+        <div class="container mx-auto px-6 lg:px-12 relative z-10 flex flex-col md:flex-row justify-between mb-16 border-b border-white/10 pb-16">
+            <div class="md:w-1/3 mb-8 md:mb-0">
+                <span class="font-outfit font-black text-2xl tracking-[1px] flex items-baseline text-white mb-4">
+                    Teranga<span class="text-accent">Immo</span>
+                </span>
+                <p class="text-gray-500 text-sm leading-relaxed max-w-xs">
+                    La plateforme immobilière premium du Sénégal, garantissant sécurité et transparence.
+                </p>
+            </div>
+            
+            <div class="flex gap-16 md:w-2/3 md:justify-end">
+                <div>
+                    <h4 class="text-white font-bold mb-4 font-outfit uppercase tracking-wider text-xs">Informations</h4>
+                    <ul class="space-y-3 text-gray-500 text-sm">
+                        <li><a href="a-propos.html" class="hover:text-accent transition-colors">À propos</a></li>
+                        <li><a href="contact.html" class="hover:text-accent transition-colors">Contact</a></li>
+                        <li><a href="faq.html" class="hover:text-accent transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6 lg:px-12 relative z-10 text-center text-xs text-gray-600 font-medium tracking-wide">
+            © 2026 BOKK Technologies. Tous droits réservés.
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>

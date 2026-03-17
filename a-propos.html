@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos | TerangaImmo</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#11131c',
+                        accent: '#C5A880',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        heading: ['Playfair Display', 'Georgia', 'serif'],
+                        outfit: ['Outfit', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
+    
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased font-sans text-gray-800 bg-[#F9FAFB] overflow-x-hidden selection:bg-accent selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 py-4 glass-nav top-0 shadow-sm">
+        <div class="container mx-auto px-6 lg:px-12 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-1 cursor-pointer group">
+                <span class="font-outfit font-black text-2xl tracking-[1px] flex items-baseline text-primary">
+                    Teranga<span class="text-accent">Immo</span><span class="w-2 h-2 rounded-full bg-accent ml-1 mb-1 shadow-[0_0_10px_rgba(12,183,242,0.8)]"></span>
+                </span>
+            </a>
+            <div class="hidden md:flex items-center space-x-10 text-sm font-medium tracking-wide">
+                <a href="index.html#hero" class="text-gray-900 hover:text-accent transition-all">Acheter</a>
+                <a href="index.html" class="text-gray-900 hover:text-accent transition-all">Louer</a>
+                <a href="contact.html" class="text-gray-900 hover:text-accent transition-all">Contact</a>
+                <a href="../../bokk-vitrine-html/index.html" class="text-gray-500 hover:text-primary transition-colors text-xs uppercase tracking-widest border-l border-gray-300 pl-8">L'écosystème BOKK</a>
+            </div>
+            <div class="hidden md:flex items-center gap-4">
+                <button class="bg-primary text-white px-7 py-3 rounded-full font-bold text-sm tracking-wide hover:bg-black transition-all shadow-lg hover:-translate-y-0.5">
+                    Déposer une annonce
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Image like the premium model -->
+    <header class="relative pt-32 pb-40 flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg" alt="Villa" class="w-full h-full object-cover grayscale opacity-20 object-center">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#F9FAFB] to-primary/80"></div>
+        </div>
+        <div class="relative z-10 text-center px-6">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 border border-accent/30 text-accent font-bold text-xs uppercase tracking-widest mb-6">
+                Notre Vision
+            </div>
+            <h1 class="text-5xl md:text-7xl font-heading font-black text-white mb-6">L'Immobilier,<br/>avec Intégrité.</h1>
+            <p class="text-xl text-gray-300 font-light max-w-2xl mx-auto">Filiale de BOKK Technologies, TerangaImmo a été créée pour éradiquer les arnaques immobilières au Sénégal.</p>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <section class="py-20 relative -mt-32 z-20">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="bg-white rounded-[3rem] p-10 md:p-16 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] border border-gray-100 flex flex-col md:flex-row gap-16">
+                
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-heading font-bold text-primary mb-6">Le Problème</h2>
+                    <p class="text-gray-500 leading-relaxed font-light mb-6">
+                        Le marché immobilier sénégalais est aujourd'hui parasité par des annonces frauduleuses, des intermédiaires fantômes et un manque de transparence désastreux sur les titres fonciers. Acheter, louer ou vendre un bien est devenu une source d'angoisse pour de nombreux citoyens.
+                    </p>
+                    <div class="bg-red-50 text-red-700 p-4 rounded-xl border border-red-100 text-sm italic font-medium">
+                        "En 2025, près de 40% des litiges devant les tribunaux dakarois concernaient le domaine foncier et immobilier."
+                    </div>
+                </div>
+
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-heading font-bold text-primary mb-6">La Solution TerangaImmo</h2>
+                    <p class="text-gray-500 leading-relaxed font-light mb-6">
+                        Nous avons construit TerangaImmo autour d'un principe non négociable : la confiance by design.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex gap-4">
+                            <i data-lucide="shield-check" class="text-accent mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-primary">Vérification Stricte</h4>
+                                <p class="text-gray-500 text-sm">Chaque profil publieur est soumis à une vérification d'identité électronique (KYC).</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <i data-lucide="scale" class="text-accent mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-primary">Partenariat Notarial</h4>
+                                <p class="text-gray-500 text-sm">Un accompagnement juridique intégré pour certifier l'authenticité des titres et baux.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- BOKK Ecosystem mention -->
+    <section class="py-16 text-center">
+        <div class="container mx-auto px-6">
+            <span class="inline-block bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full mb-4">L'Écosystème</span>
+            <h3 class="text-2xl font-bold font-heading text-primary mb-2">Une solution propulsée par BOKK</h3>
+            <p class="text-gray-500 text-sm max-w-xl mx-auto">TerangaImmo rejoint TerangaJob, TerangaShop et nos autres plateformes pour digitaliser et sécuriser l'économie sénégalaise avec dignité et transparence.</p>
+        </div>
+    </section>
+
+    <footer class="bg-[#111111] pt-12 pb-12 relative overflow-hidden flex flex-col mt-10">
+        <div class="container mx-auto px-6 lg:px-12 relative z-10 text-center text-xs text-gray-600 font-medium tracking-wide">
+            © 2026 BOKK Technologies. Tous droits réservés.
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
